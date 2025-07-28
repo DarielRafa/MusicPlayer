@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="audio" src="samsons.mp3"></audio>
+    <video src="TANJIRO.mp4" id="bgVideo" autoplay muted loop></video>
+    <div class="container">
+        <div class="music-player">
+            <div class="cover-container">
+                <img src="https://asset.kompas.com/crops/xQpWgzxqVvdxx6i-Wn2zbNTh0kA=/0x0:780x390/750x500/data/photo/2017/01/05/2119215Samsons2780x390.jpg"
+                    alt="cover" id="cover" class="rotate-pause" />
+            </div>
+            <h1 id="title">Di Ujung Jalan</h1>
+            <p id="artist">Samsons</p>
+            <input type="range" id="progress" value="0" />
+            <div class="time">
+                <span id="current">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i></button>
+                <button id="play"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+        <!-- Audio -->
+
+        <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
